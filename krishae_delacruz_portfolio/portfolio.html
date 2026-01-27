@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>Howdy! I'm Krishae, a 4th year student from Central Luzon State University pursuing a Bachelor of Science in Information Technology. 
+                    I am eager to explore opportunities that allow me to apply and enhance my knowledge and skills in a dynamic and collaborative environment. 
+                </p>
+                <img src="krishae.jpg" alt="Photo of Krishae Delacruz" width="200">
+            </section>
+
+            <section>
+                <h2>My Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                        <tr>
+                            <td>BantayKalusugan</td>
+                            <td>A Disease Surveillance System</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>BoardMate System</td>
+                            <td>Laravel-based Boarding House Management System </td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Transgen Solutions</td>
+                            <td>HR Management System</td>
+                            <td>2024</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+
+            <section>
+                <h2>Contact Me</h2>
+
+                <form action="/submit_contact" method="post">
+
+                    <label for="full_name">Full Name: </label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    <br>
+
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>How did you hear about this portfolio?</legend>
+
+                        <input type="radio" id="friend" name="source" value="friend" required>
+                        <label for="friend">Friend</label>
+                        <br>
+                        <input type="radio" id="social_media" name="source" value="social_media">
+                        <label for="social_media">Social Media</label>
+                        <br>
+                        <input type="radio" id="search_engine" name="source" value="search_engine">
+                        <label for="search_engine">Search Engine</label>
+                        <br>
+                        <input type="radio" id="other" name="source" value="other">
+                        <label for="other">Other</label>
+
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Skills/Interests</legend>
+
+                        <input type="checkbox" id="web_development" name="web_development">
+                        <label for="web_development">Web Development</label>
+                        <br>
+                        <input type="checkbox" id="design" name="design">
+                        <label for="design">Design</label>
+                        <br>
+                        <input type="checkbox" id="photography" name="photography">
+                        <label for="photography">Photography</label>
+                    </fieldset>
+                    <br>
+
+                    <label for="message">Comments or Messages: </label> <br>
+                    <textarea id="message" name="message"></textarea>
+                    <br><br>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; Krishae Ann Dela Cruz 2026</p>
+        </footer>
+    </body>
+</html>
