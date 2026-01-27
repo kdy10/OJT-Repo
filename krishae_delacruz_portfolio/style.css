@@ -13,6 +13,7 @@ header{
     text-align: center;
     background-color: white;
     padding: 20px;
+    margin-bottom: 40px;
     }
 
 nav ul{
@@ -44,7 +45,7 @@ section{
 
 .aboutme{
         display: block;
-        margin-top: 20px;
+      
         padding: 40px;
         gap: 20px;
         border: 1px solid white;
