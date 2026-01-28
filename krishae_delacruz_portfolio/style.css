@@ -45,7 +45,6 @@ section{
 
 .aboutme{
         display: block;
-      
         padding: 40px;
         gap: 20px;
         border: 1px solid white;
@@ -101,7 +100,7 @@ tr:hover {
 .contact{
         margin-top: 20px;
         padding: 10px;
-        width: 70%;
+        width: 50%;
         margin: auto;
         margin-bottom: 30px;
 }
