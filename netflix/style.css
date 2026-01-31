@@ -219,9 +219,6 @@ main, footer{
 }
 .trending-item span{
     font-size: 90px;
-    text-shadow: 1px 1px 6px #333;
-    -webkit-text-stroke: 1px white; 
-    -webkit-text-fill-color: black;
     color: black;
     font-weight: 700;
     position: absolute;
@@ -229,6 +226,15 @@ main, footer{
     left: -15px;
     z-index: 11;
     transition: 0.4s all ease-in-out;
+    text-shadow:
+        -2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff,
+        0 -2px 0 #fff,
+        0 2px 0 #fff,
+        -2px 0 0 #fff,
+        2px 0 0 #fff;
 }
 .trending-item i {
     background-color: #1a1a1a;
