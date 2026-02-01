@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+header {
+    height: 100px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	z-index: 11;
+    
+    
+}
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+nav form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.language-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.language-select select {
+    padding: 5px 10px 5px 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.language-select i {
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+
+    
+}
+nav form select option {
+    background-color: transparent;
+    color: black;
+}
+nav form select option:hover {
+    background-color: gray;
+}
+
+nav form input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}   
+nav form input[type="submit"]:hover {
+    background-color: #f40612;
+}
+
+
+
+
+main, footer{
+    background-color: black;
+    color: white;
+
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("assets/home-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    height: 400px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.hero-section h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.hero-section p {
+    margin-bottom: 20px;
+}
+.email-form {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: relative;
+}
+.email-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+.email-form input[type="submit"] {
+    padding: 10px 30px 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.email-form input[type="submit"]:hover {
+    background-color: #f40612;
+}
+.email-form i{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    
+}
+
+
+
+
+.trending-section, .more-reason-section, .faqs-section{
+    padding: 0 90px 40px 90px;
+}
+
+.select-cont{
+    margin: 10px 10px 20px 10px;
+    padding: 5px 5px 5px 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+.select-cont option {
+    background-color: transparent;
+    color: black;
+}
+.select-cont option:hover {
+    background-color: gray;
+}
+.trending-section h2, .more-reason-section h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    
+}
+.trending-item , .reason-item, .faqs-item{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.trending-item{
+    padding: 0 30px 20px 20px;
+    overflow-x: auto;
+}
+.trending-item a {
+    position: relative;
+}
+.trending-item img {
+    width:  220px;
+    height: 280px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.trending-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.trending-item span{
+    font-size: 90px;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: -15px;
+    z-index: 11;
+    transition: 0.4s all ease-in-out;
+    text-shadow:
+        -2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff,
+        0 -2px 0 #fff,
+        0 2px 0 #fff,
+        -2px 0 0 #fff,
+        2px 0 0 #fff;
+}
+.trending-item i {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 140px;
+    margin-top: 80px;
+    
+}
+
+
+
+
+.reason-item article {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    background: linear-gradient( 149deg, #192247 0%, #210e17 96.86% );
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px;
+    position: relative;
+
+}
+.reason-item h3{
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.reason-item img{
+    width: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+.faqs-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faqs-item details {
+    background-color: #333;
+}
+
+.faqs-item summary {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faqs-email{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.faqs-email input[type="email"]{
+    width: 600px;
+} 
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 90px 40px 90px;
+    gap: 20px;
+}
+
+footer .question{
+    color: gray;
+}
+
+.links-section{
+    display: flex;
+    
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 180px;
+    
+}
+.links-section ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.links-section ul li a{
+    
+    color: gray;
+    font-size: 14px;
+}
+
+footer .language-select {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header nav {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    header nav img {
+        width: 100px;
+    }
+    header .language-select select{
+        font-size: 12px;
+    }
+    header nav form input[type="submit"] {
+        font-size: 12px;
+    }
+    .hero-section {
+        height: auto;
+        padding: 90px 15px 40px 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .hero-section h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .hero-section h2 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .hero-section p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .email-form {
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .email-form input[type="email"] {
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .email-form input[type="submit"] {
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .email-form i{
+        display: none;
+    }
+    .trending-section, .more-reason-section, .faqs-section{
+        padding: 30px 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .trending-section h2, .more-reason-section h2, .faqs-section h2 {
+        font-size: 22px;
+    }
+    .trending-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .trending-item a {
+        margin: 0 0 20px 0;
+    }
+    .trending-item img {
+        width: 100%;
+        height: auto;
+    }
+    .trending-item span{
+        font-size: 55px;
+        left: 10px;
+        bottom: 5px;
+    }
+    .trending-item i {
+        display: none;
+    }
+    .reason-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        
+    }
+    .reason-item article {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+    .reason-item img{
+        position: static;
+        margin-top: 20px;
+        align-self: center;
+    }
+    .faqs-item {
+        padding: 0;
+    }
+    .faqs-item details{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .faqs-item summary{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .faqs-email input[type="email"]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer{
+        padding: 20px 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    footer .links-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .links-section ul{
+        margin: 0;
+        gap: 8px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    main {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    header nav {
+        width: 100% !important;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    nav img {
+        width: 130px;
+    }
+    .hero-section {
+        height: auto;
+        padding: 100px 30px 50px 30px;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    .hero-section h2 {
+        font-size: 18px;
+    }
+    .hero-section p {
+        font-size: 14px;
+    }
+    .email-form {
+        width: 70%;
+        margin: 0 auto;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .email-form input[type="email"] {
+        width: 60%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .email-form input[type="submit"] {
+        width: 25%;
+        padding: 10px 10px 10px 20px;
+        font-size: 14px;
+    }
+    .email-form i{
+        right: 60px;
+    }
+    .trending-section, .more-reason-section, .faqs-section {
+        padding: 20px 30px;
+        width: 100% ;
+        box-sizing: border-box;
+    }
+    .trending-section h2, .more-reason-section h2 {
+        font-size: 24px;
+    }
+    .trending-item {
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .trending-item a {
+        flex: 0 1 calc(50% - 8px);
+    }
+    
+    .trending-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .trending-item i {
+        display: none;
+    }
+    
+    .reason-item {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reason-item article {
+        width: 80%;
+        height: 180px;
+        margin: 0;
+        gap: 10px;
+    }
+    .reason-item h3{
+        font-size: 28px;
+    }
+    .reason-item p{
+        font-size: 18px;
+    }
+    footer {
+        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .links-section {
+        gap: 100px;
+    }
+}
