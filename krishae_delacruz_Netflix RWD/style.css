@@ -80,6 +80,14 @@ nav form input[type="submit"] {
 nav form input[type="submit"]:hover {
     background-color: #f40612;
 }
+.hide-label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+}
 
 
 
@@ -419,6 +427,9 @@ footer .language-select {
         align-items: center;
         padding: 0;
     }
+    .trending-item li{
+    list-style: none;
+}
     .trending-item a {
         margin: 0 0 20px 0;
     }

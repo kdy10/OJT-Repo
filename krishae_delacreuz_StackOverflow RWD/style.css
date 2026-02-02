@@ -62,7 +62,7 @@ form input{
     display: flex;
     gap: 5px;
 }
-.blue-btn{
+.signup-btn, .article-btn{
     padding: 8px 14px;
     background-color: #1b75d0;
     color: white;
@@ -71,7 +71,7 @@ form input{
     cursor: pointer;
     transition: transform 0.5s ease; 
 }
-.blue-btn:hover{
+.signup-btn:hover, .article-btn:hover{
     background-color: #155ea8;
     color: white;
     transform: scale(1.05);
@@ -281,7 +281,7 @@ main{
     color: #1b75d0;
     font-size: 16px;
 } 
-.for-api .blue-btn{
+.for-api .article-btn{
     width: 200px;
     margin-top: 0;
     text-align: center;
@@ -430,7 +430,7 @@ main{
         bottom: auto;
         margin-top: 15px;
     }
-    .blue-btn, .login-btn, .link-btn{
+    .article-btn, .signup-btn, .login-btn, .link-btn{
         padding: 8px 12px;
         font-size: 14px;
         width: auto;

@@ -55,14 +55,13 @@ form input{
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  
 }
 .header-btns{
     display: flex;
     gap: 5px;
 }
-.blue-btn{
+.signup-btn, .article-btn{
     padding: 8px 14px;
     background-color: #1b75d0;
     color: white;
@@ -71,7 +70,7 @@ form input{
     cursor: pointer;
     transition: transform 0.5s ease; 
 }
-.blue-btn:hover{
+.signup-btn:hover, .article-btn:hover{
     background-color: #155ea8;
     color: white;
     transform: scale(1.05);
@@ -129,7 +128,6 @@ aside nav ul li a{
 main{
     width: 75%;
     margin-top: 8px;
-    /* z-index: -1; */
 }
 .hero-section{
     background-color: #f9fafa;
@@ -166,7 +164,6 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     padding: 2px 12px;
-    display: inline-block;
 }
 .hero-section p{
     font-size: 16px;
@@ -212,11 +209,11 @@ main{
     position: relative;
 }
 .for-teams, .for-ai, .for-work{
-    flex: 0 0 95%;
+    flex-basis: 95%;
 }
 .for-advertising, .for-api{
     flex: 1;
-    max-width: calc(50% - 10px);
+    width: 50%;
     gap: 10px;
 }
  .for-teams-text, .for-ai-text{
@@ -262,7 +259,7 @@ main{
     background-color: #3b4045;
     color: white;
 }
-.orange-btn{
+.for-ai-btn{
     padding: 6px 14px;
     background-color: #e7700d;
     color: white;
@@ -272,7 +269,7 @@ main{
     margin: 8px 0;
     transition: transform 0.5s ease;
 } 
-.orange-btn:hover{
+.for-ai-btn:hover{
     background-color: #b3540a;
     color: white;
     transform: scale(1.05);
@@ -281,7 +278,7 @@ main{
     color: #1b75d0;
     font-size: 16px;
 } 
-.for-api .blue-btn{
+.for-api .article-btn{
     width: 200px;
     margin-top: 0;
     text-align: center;

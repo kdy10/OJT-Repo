@@ -80,6 +80,14 @@ nav form input[type="submit"] {
 nav form input[type="submit"]:hover {
     background-color: #f40612;
 }
+.hide-label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+}
 
 
 
@@ -200,6 +208,10 @@ main, footer{
 }
 .trending-item{
     padding: 0 30px 20px 20px;
+
+}
+.trending-item li{
+    list-style: none;
 }
 .trending-item a {
     position: relative;

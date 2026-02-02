@@ -30,6 +30,7 @@
                             <option value="de">German</option>
                         </select>
                     </div>
+                    
                     <input type="submit" value="Sign In">
                 </form>
             </nav>
@@ -43,7 +44,8 @@
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
 
                 <form class="email-form">
-                    <input type="email" placeholder="Email address">
+                    <label for="email-address" class="hide-label">Email Address</label>
+                    <input type="email" id="email-address" placeholder="Email address">
                     <input type="submit" value="Get Started">
                     <i class="fa-solid fa-angle-right"></i>
                 </form>
@@ -67,11 +69,32 @@
                 </form>
 
                 <div class="trending-item">
-                    <a href="#"><img src="assets/trending-1.webp" alt="Trending 1 - Ad Vitam"><span>1</span></a>
-                    <a href="#"><img src="assets/trending-2.webp" alt="Trending 2 - The Intruder"><span>2</span></a>
-                    <a href="#"><img src="assets/trending-3.webp" alt="Trending 3 - The Secret life of Pets"><span>3</span></a>
-                    <a href="#"><img src="assets/trending-4.webp" alt="Trending 4 - Meg 2 The Trench"><span>4</span></a>
-                    <a href="#"><img src="assets/trending-5.webp" alt="Trending 5 - The Forge"><span>5</span></a>
+                    <li>
+                        <a href="#"><img src="assets/trending-1.webp" alt="Trending 1 - Ad Vitam">
+                            <span>1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><img src="assets/trending-2.webp" alt="Trending 2 - The Intruder">
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/trending-3.webp" alt="Trending 3 - The Secret life of Pets">
+                            <span>3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/trending-4.webp" alt="Trending 4 - Meg 2 The Trench">
+                            <span>4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/trending-5.webp" alt="Trending 5 - The Forge">
+                            <span>5</span>
+                        </a>
+                    </li>
 
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
@@ -165,8 +188,8 @@
                 <div class="faqs-email">
                     <p>Ready to watch? Enter your email to create or restart your membership.</p>
                     <form class="email-form">
-                        
-                        <input type="email" placeholder="Email address" class="long-email">
+                        <label for="email" class="hide-label">Email Address</label>
+                        <input type="email" id="email" placeholder="Email address" class="long-email">
                         <input type="submit" value="Get Started">
                         <i class="fa-solid fa-angle-right"></i>
                     </form>
