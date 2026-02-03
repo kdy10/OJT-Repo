@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #091E42;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header::after{
+    content: "";
+    display: block;
+    height: 50px;
+    background-color: #DEEBFF;
+    width: 100%;
+}
+header img{
+    height: 40px;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #091E42;
+    font-weight: 600;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: flex-end;
+}
+.login-btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #091E42;
+}
+.signup-btn{
+    padding: 12px 24px;
+    background-color: #0065FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.signup-btn:hover, .get-trello-btn:hover{
+    background-color: #0051CC;
+}
+.get-trello-btn{
+    padding: 20px 24px;
+    background-color: #0065FF;
+    background-size: cover;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero-section{
+    background-color:#F4F5F7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 120px 0;
+    gap: 15px;
+}
+.hero-section h1{
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 800px;
+}
+.hero-section p{
+    font-size: 20px;
+    max-width: 600px;
+}
+.hero-section form, .get-started-section form{
+    flex-direction: row;
+    gap: 10px;
+}
+.hero-section input[type="email"], .get-started-section input[type="email"]{
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.privacy-policy{
+    font-size: 10px;
+    max-width: 500px;
+}
+
+.message-section{
+    background-color: #0065FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px 20px 20px;;
+    width: 100%;
+}
+.message-section h2{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 800px;
+    text-align: center;
+}
+.message-section .message-section-text{
+    color: #FFFFFF;
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.email-magic-article, .message-sorcery-article   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ .message-sorcery-article {
+
+    position: relative;
+    top: 100px;
+    z-index: 10;
+} 
+.email-magic-article .email-img, .message-sorcery-article .message-img{
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+.email-magic-content, .message-sorcery-content{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    max-width: 350px;
+}
+.email-magic-content h3, .message-sorcery-content h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #091E42;
+    display: flex;
+    align-items: center;
+}
+.email-magic-content h3 img, .message-sorcery-content h3 img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.email-magic-content p, .message-sorcery-content p{
+    font-size: 20px;
+    color: #091E42;
+    line-height: 1.5;
+    text-align: left;
+}
+.sorcery-spacer{
+    height: 160px;
+    width: 100% ;
+}
+
+.work-smarter-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 100px;
+    
+    width: 100%;
+}
+.work-smarter-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 40px 30px;
+    max-width: 500px;
+}
+.work-smarter-header h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.work-smarter-header h3{
+    font-size: 14px;
+}
+.work-smarter-header p{
+    font-size: 18px;
+    text-align: left;
+}
+.work-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.work-card{
+    background-color: #FAFBFC;
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+}
+.work-card img{
+    width: 160px;
+    height: 160px;
+}
+.work-card h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.work-card p{
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+.workcard-btn{
+    align-items: center;
+    padding: 10px 16px;
+    background-color: transparent;
+    border: 1px solid #0065FF;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 14px;
+    text-decoration: none;
+    color: #091E42;
+}
+.workcard-btn:hover{
+    background-color: #DEEBFF;
+}
+
+.community-section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px 80px 20px;
+    width: 100%;
+}
+.community-section h2{
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 700px;
+    text-align: center;
+}
+.get-started-section{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px 80px 20px;
+    width: 100%;
+}
+.get-started-section h2{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+footer{
+    background-color: #172B4D;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    width: 100%;
+}
+.language-select{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language-icon{
+    width: 18px;
+    height: 18px;
+}
+.dropdown{
+    width: 14px;
+    height: 8px;
+}
+footer nav ul{
+    gap: 30px;
+}
+footer nav a{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+.media-icons{
+    margin-left: auto;
+}
+.media-icons ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.media-icons li{
+    list-style: none;
+}
+.media-icons img{
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (min-width: 481px) and (max-width: 1020px) {
+    nav ul{
+        display: none;
+    }
+    header form {
+        display: none;
+    }
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .hero-section input[type="email"], .get-started-section input[type="email"] {
+        width: 250px;
+    }
+    .message-section {
+        padding: 60px 20px 20px 20px;
+    }
+    .message-section h2 {
+        font-size: 28px;
+    }
+    .message-section .message-section-text {
+        font-size: 16px;
+    }
+    .email-magic-article, .message-sorcery-article {
+        flex-direction: column;
+        width: 90%;
+        padding: 30px 40px;
+        gap: 30px;
+    }
+    .email-magic-article .email-img, .message-sorcery-article .message-img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .email-magic-content, .message-sorcery-content {
+        max-width: 100%;
+    }
+    .work-smarter-section {
+        padding: 10px 40px;
+    }
+    .work-card {
+        width: 80%;
+        max-width: 350px;
+    }
+    .community-section img {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer nav ul {
+        gap: 20px;
+    }
+}
+
+
+
