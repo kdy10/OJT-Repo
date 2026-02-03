@@ -48,3 +48,7 @@ let reverseDiscountPercentage = 15;
 let reverseOriginalPrice = finalPrice / (1 - (reverseDiscountPercentage / 100));
 
 console.log("The original price before the discount was: $" + reverseOriginalPrice + ".");
+
+
+
+
