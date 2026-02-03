@@ -53,9 +53,8 @@ form input{
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
+    margin: 0;
     overflow: hidden;
-    clip: rect(0,0,0,0);
     border: 0;
 }
 .header-btns{
@@ -404,14 +403,14 @@ main{
         font-size: 18px;
     }
     .for-teams, .for-ai, .for-advertising, .for-api, .for-work {
-        flex: 0 0 100% !important;
+        flex: 0 0 100% ;
         width: 100%;
-        max-width: 100% !important;
-        margin: 0 0 15px 0 !important;
+        max-width: 100% ;
+        margin: 0 0 15px 0;
         padding: 15px;
     }
     .for-teams-text, .for-ai-text, .for-work-text {
-        width: 100% !important;
+        width: 100% ;
         margin-bottom: 15px;
     }
     .for-teams-text p, .for-ai-text p, .for-work-text p, .for-advertising p, .for-api p, .for-work p {
@@ -432,7 +431,7 @@ main{
     }
     .article-btn, .signup-btn, .login-btn, .link-btn{
         padding: 8px 12px;
-        font-size: 14px;
+        font-size: 12px;
         width: auto;
     }
     .section {
@@ -453,11 +452,11 @@ main{
     }
     header {
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 10px;
         gap: 15px;
     }
     header img {
-        width: 120px;
+        width: 100px;
     }
     header nav ul {
         gap: 12px;
@@ -535,6 +534,11 @@ main{
     }
     .for-teams p, .for-ai p, .for-advertising p, .for-api p, .for-work p {
         font-size: 16px;
+    }
+    .article-btn, .signup-btn, .login-btn, .link-btn{
+        padding: 8px 8px;
+        font-size: 6px;
+        width: auto;
     }
 }
 
