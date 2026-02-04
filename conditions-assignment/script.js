@@ -23,7 +23,7 @@ else {
 // Task 2: Weather Advisor
 console.log("\n\nTask 2: Weather Advisor");
 
-let temperature = "s";
+let temperature = 25;
 
 if (temperature < 0){
     console.log("It's freezing outside! Bundle up!");
