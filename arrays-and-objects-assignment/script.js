@@ -57,7 +57,7 @@ student.courses.push("Science");
 
 //console.log(Object.entries(student));
 //console.log(student);
-for (let key in student){
+for (let key in student) {
     console.log(key + ": " + student[key]);
 }
 

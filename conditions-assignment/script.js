@@ -3,16 +3,16 @@ console.log("Task 1: Grading System");
 
 let score = 87;
 
-if (score >= 90 && score <= 100){
+if (score >= 90 && score <= 100) {
     console.log("Grade A");
 }
-else if (score >=80 && score < 90){
+else if (score >=80 && score < 90) {
     console.log("Grade B");
 }
-else if (score >=70 && score < 80){
+else if (score >=70 && score < 80) {
     console.log("Grade C");
 }
-else if (score >=60 && score < 70){
+else if (score >=60 && score < 70) {
     console.log("Grade D");
 }
 else {
@@ -25,13 +25,13 @@ console.log("\n\nTask 2: Weather Advisor");
 
 let temperature = 25;
 
-if (temperature < 0){
+if (temperature < 0) {
     console.log("It's freezing outside! Bundle up!");
 }
-else if (temperature >= 0 && temperature <= 15){
+else if (temperature >= 0 && temperature <= 15) {
     console.log("It's cold outside. Wear a jacket.");
 }
-else if (temperature >= 16 && temperature <= 30){
+else if (temperature >= 16 && temperature <= 30) {
     console.log("The weather is nice. Enjoy your day!");
 }
 else {
@@ -44,15 +44,17 @@ console.log("\n\nTask 3: Eligibility Checker");
 
 let age = 21;
 
-if (age < 13){
+if (age < 13) {
     console.log("You are too young for this activity.");
 }
-else if (age >= 13 && age <= 17){
+else if (age >= 13 && age <= 17) {
     console.log("You need parental permission.");
 }
 else {
     console.log("You are eligible for this activity.");
 }
+
+
 
 
 // Task 4: Ticket Price Calculator
@@ -62,11 +64,11 @@ console.log("\n\nTask 4: Ticket Price Calculator");
 let isMember = false;
 let ticketPrice;
 
-if (age < 12){
+if (age < 12) {
     ticketPrice = "free";
 }
-else if (age >= 12){
-    if (isMember){
+else if (age >= 12) {
+    if (isMember) {
         ticketPrice = "$10";
     }
     else {
@@ -76,10 +78,12 @@ else if (age >= 12){
 console.log("Ticket Price is " + ticketPrice);
 
 
+
+
 // Task 5: Challenge Task (Optional): Leap Year Checker
 console.log("\n\nTask 5: Leap Year Checker");
-function isLeapYear(year){
-    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 == 0)){
+function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 == 0)) {
         return true;
     }
     else {
