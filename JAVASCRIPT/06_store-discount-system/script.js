@@ -34,3 +34,5 @@ console.log("Customer Type: " + customer_type);
 console.log("Purchase Amount: $" + purchase_amount);
 console.log("Discount Applied: " + discount_applied + "%");
 console.log("Final Price after Discount: $" + final_price);
+
+
