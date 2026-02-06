@@ -1,7 +1,7 @@
 console.log("Store Discount System\n\n");
 
 let customer_type = "member";
-let purchase_amount = 250;
+let purchase_amount = 21;
 let discount = 0;
 
 if (customer_type === "member" && purchase_amount >= 1000) {
