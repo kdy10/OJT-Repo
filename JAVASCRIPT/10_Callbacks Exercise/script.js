@@ -32,7 +32,7 @@ console.log("\nExercise 2: Using Callbacks with setTimeout");
 
 function delayedMessage(message, delay, callback, secondCallback) {
     secondCallback("Hello, second callback!");
-    setTimeout(() => {
+    setTimeout( function() {
         callback(message);
     }, delay);
 

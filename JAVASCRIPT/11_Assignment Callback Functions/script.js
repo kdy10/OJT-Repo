@@ -26,7 +26,7 @@ console.log("\nTask 2: Countdown Timer");
 function countdown(start, callback) {
     let delay = 1000; 
     for (let i = start; i >= 0; i--) {
-        setTimeout(() => {
+        setTimeout( function() {
             callback(i);
         }, delay);
         delay += 1000;
@@ -62,7 +62,7 @@ console.log("\nTask 4: Task Runner");
 
 function runTasks(tasks) {
     for (let i = 0; i < tasks.length; i++) {
-        setTimeout(() => {
+        setTimeout( function() {
             tasks[i]();
         }, i * 1000);   
     }
