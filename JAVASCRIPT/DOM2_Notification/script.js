@@ -6,15 +6,15 @@ function showNotification() {
 
     taskText.textContent = "You have a new notification!";
     newTask.appendChild(taskText);
+    
     removeBtn.textContent = "X";
     newTask.appendChild(removeBtn);
 
     const container = document.getElementById("notif-card");
     container.appendChild(newTask);
 
-    removeBtn.addEventListener("click", 
-        function() {
+    removeBtn.onclick = function() {
             container.removeChild(newTask);
-        });
+        };
 }
 

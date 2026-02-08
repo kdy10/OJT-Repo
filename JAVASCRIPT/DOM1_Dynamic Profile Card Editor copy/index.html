@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Profile Card Editor</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <main>
+            <div id="profile-card">
+                <img src="img/profile4.png" alt="Profile Picture" id="profile-picture">
+                <h2 id="profile-name">Krishae</h2>
+                <p id="profile-bio">Hello, World!</p>
+            </div>
+
+            <form>
+                <label for="name">Update Name:</label>
+                <input type="text" id="name">
+                <button type="button" onclick="updateProfileName()">Update Name</button>
+
+                <label for="bio">Update Bio:</label>
+                <input type="text" id="bio">
+                <button type="button" onclick="updateProfileBio()">Update Bio</button>
+
+                <label for="image">Update Image URL:</label>
+                <input type="text" id="image">
+                <button type="button" onclick="updateProfileImage()">Update Image</button>
+
+                <label for="color">Change Background Color:</label> 
+                <input type="color" id="color">
+                <button type="button" onclick="updateBgColor()">Update Background Color</button>
+
+            </form>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

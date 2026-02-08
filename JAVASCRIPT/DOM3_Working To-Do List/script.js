@@ -20,10 +20,9 @@ function addTask() {
 
 
 
-    removeBtn.addEventListener("click",         // remove task on click
-        function() {
+    removeBtn.onclick = function() {     // remove task on click 
             container.removeChild(newTask);
-        });
+        };
         
     setTimeout(function() {        //  remove task after 5 seconds
         if (container.contains(newTask)) {
