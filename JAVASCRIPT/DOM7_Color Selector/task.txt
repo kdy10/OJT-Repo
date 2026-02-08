@@ -1,0 +1,12 @@
+Click a color button. What happens?
+- When I click a color button, two alerts appear. The first says "You clicked the Red Button," followed immediately by a second alert saying "You clicked the container."
+
+
+Uncomment event.stopPropagation(); inside the button click handler.
+Click a color button again. What changed?
+- After uncommenting event.stopPropagation(), only one alert appears which is "You clicked the Red Button."
+
+
+Explain in your own words why event.stopPropagation() is useful in this example.
+- When we click a button inside a container, we are technically clicking the container as well. This happens because JavaScript events 'bubble up' to parent elements. 
+In this example, we use event.stopPropagation() to prevent the button's event from triggering the events attached to the container or other parent elements.

@@ -22,14 +22,22 @@ const character = {     // created an object to store properties and metthods
 }
 
 
-function generateCharacter(name){       // function to generate a random character with random properties
+/* * DOCU: Creates a new character object with a random name and randomized stats (health, class, and ability).
+ * @param {string} name - The name of the character (uses a random name if left blank)
+ * @returns {Object} - A character object containing stats and a battle simulation
+ * @throws {Error} - If the global 'character' helper object or 'randomName' list is missing
+ * * Last Updated: 2026-02-08  
+ * Author: Krishae Ann Dela Cruz  
+ * Last Updated By: Krishae Ann Dela Cruz  
+ */
+function generateCharacter(name){      
     return { 
         name: name || randomName[Math.floor(Math.random() * randomName.length)],
         health: character.randomizedHealth(),
         class: character.randomizedClass(),
         specialAbility: character.randomizedAbility(),
         
-        battle(otherCharacter) {        // method to simulate a battle between two characters
+        battle(otherCharacter) {        
             const damage = Math.floor(Math.random() * (20 - 5 + 1)) + 5;
             const prevHealth = otherCharacter.health;
 
@@ -42,7 +50,14 @@ function generateCharacter(name){       // function to generate a random charact
     }
 }
 
-function generateMultipleCharacters(num) {       // function to generate multiple random characters
+/* * DOCU: Creates a list of multiple random characters at once.
+ * @param {number} num - The number of characters to create
+ * @returns {Array} - A list containing the generated character objects
+ * * Last Updated: 2026-02-08  
+ * Author: Krishae Ann Dela Cruz  
+ * Last Updated By: Krishae Ann Dela Cruz  
+ */
+function generateMultipleCharacters(num) {       
     const characters = [];
     for (let i = 0; i < num; i++) {
         characters.push(generateCharacter());
