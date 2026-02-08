@@ -3,35 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dynamic Profile Card Editor</title>
+        <title>Bank Account Manager</title>
         <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
         <main>
-            <div id="profile-card">
-                <img src="img/profile4.png" alt="Profile Picture" id="profile-picture">
-                <h2 id="profile-name">Krishae</h2>
-                <p id="profile-bio">Hello, World!</p>
+            <h1>Bank Account Manager</h1>
+            <div id="bank-card">
+
+                <h2>Current Balance: <span id="balanceAmount">$100</span></h2>
+        
+                <form>
+                    <label for="amount"></label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+
+                    <div id="bank-buttons">
+                        <button type="button" id="deposit">Deposit</button>
+                        <button type="button" id="withdraw">Withdraw</button>
+                    </div>
+                    
+                </form>
+
+                <h3 id="message"></h3>
             </div>
 
-            <form>
-                <label for="name">Update Name:</label>
-                <input type="text" id="name">
-
-                <label for="bio">Update Bio:</label>
-                <input type="text" id="bio">
-
-                <label for="image">Update Image URL:</label>
-                <input type="text" id="image">
-
-                <label for="color">Change Background Color:</label> 
-                <input type="color" id="color" value="#F0F0F0">
-
-                <button type="button" id="updateProfile">Update Profile</button>
-            </form>
+            
         </main>
+
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
+    
 </html>

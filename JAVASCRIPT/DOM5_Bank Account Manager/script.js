@@ -1,34 +1,46 @@
-const profilePicture = document.getElementById('profile-picture');
-const profileName = document.getElementById('profile-name');
-const profileBio = document.getElementById('profile-bio');
-const profileCard = document.getElementById('profile-card');    
+const balanceAmount = document.getElementById('balanceAmount');
+const amountInput = document.getElementById('amount');
+const depositButton = document.getElementById('deposit');
+const withdrawButton = document.getElementById('withdraw');
+const message = document.getElementById('message');
 
+let balance = 100;  // initial balance 
 
-function updateProfile() {
-    const inputName = document.getElementById("name").value.trim();
-    const inputBio = document.getElementById("bio").value.trim();
-    const inputImageUrl = document.getElementById("image").value.trim();
-    const inputColor = document.getElementById("color").value;
-
-
-    if (inputName) {
-        profileName.textContent = inputName;
+function deposit() {        // when deposit button is clicked and entered a valid amount
+    const amount = amountInput.value.trim();
+    if (amount === '' || Number(amount) <= 0) {
+        message.innerText = 'Enter a valid amount.';
+        message.style.color = 'red';
+        return;
     }
+    balance += Number(amount);
+    balanceAmount.innerText = "$" + balance;
+    message.innerText = "Successfully deposited $" + Number(amount);
+    amountInput.value = '';
 
-    if (inputBio) {
-        profileBio.textContent = inputBio;
+}
+
+function withdraw() {   // when withdraw button is clicked and entered a valid amount    
+    const amount = amountInput.value.trim();    
+    if (amount === '' || Number(amount) <= 0) {
+        message.innerText = 'Enter a valid amount.';
+        message.style.color = 'red';
+        return;
     }
-
-    if (inputImageUrl) {
-        profilePicture.setAttribute('src', inputImageUrl);
+    if (Number(amount) > balance) {
+        message.innerText = 'Insufficient amount.';
+        message.style.color = 'red';
+        return;
     }
+    balance -= Number(amount);
+    balanceAmount.innerText = "$" + balance;
+    message.innerText = "Successfully withdrew $" + Number(amount);
+    amountInput.value = '';
+}
 
-    if (inputColor) {
-        profileCard.style.backgroundColor = inputColor;
-    }
+// added event listeners to buttons to call its functions
+depositButton.addEventListener('click', deposit);   
+withdrawButton.addEventListener('click', withdraw);
 
-}  
-  
 
-const updateButton = document.getElementById('updateProfile');      // updates the profile when button is clicked using event listener
-updateButton.addEventListener('click', updateProfile);
+

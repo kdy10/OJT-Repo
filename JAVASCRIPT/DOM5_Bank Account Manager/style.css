@@ -7,36 +7,32 @@ body{
 }
 
 main{
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-    width: 400px;
-    height: 700px;
+    width: 500px;
+    height: fit-content;
+    padding-bottom: 10px;
     background-color: white;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-div{
+#bank-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     margin: 20px 10px;
-    width: 300px;
+    padding: 30px;
+    width: fit-content;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    border: 1px solid black;
     gap: 0;
 }
-div h2{
+.bank-card h2{
     margin: 0;
 }
-div img{
-    margin: 10px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
+
 
 form{
     display: flex;
@@ -44,13 +40,7 @@ form{
     width: 300px;
     height: auto;
 }
-button{
-    width: fit-content;
-    height: 30px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
+
 form label{
     font-weight: 500;
     margin-top: 10px;
@@ -60,10 +50,28 @@ form input{
     margin-top: 10px;
     border: 1px solid #ccc;
     padding: 5px;
+    font-size: 16px;
 }
-form input[type="color"]{
-    width: auto;
+
+#bank-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    width: fit-content;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
 }
 button:hover{
     background-color: #ccc;
+}
+
+h3{
+    color: green;
+    margin-top: 20px;
 }
