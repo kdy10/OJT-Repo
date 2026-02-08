@@ -30,5 +30,5 @@ function updateProfile() {
 }  
   
 
-const updateButton = document.getElementById('updateProfile');
+const updateButton = document.getElementById('updateProfile');      // updates the profile when button is clicked using event listener
 updateButton.addEventListener('click', updateProfile);
