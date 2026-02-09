@@ -3,10 +3,22 @@ const amountInput = document.getElementById('amount');
 const depositButton = document.getElementById('deposit');
 const withdrawButton = document.getElementById('withdraw');
 const message = document.getElementById('message');
+let balance = 100;  
 
-let balance = 100;  // initial balance 
 
-function deposit() {        // when deposit button is clicked and entered a valid amount
+depositButton.addEventListener('click', deposit);   
+withdrawButton.addEventListener('click', withdraw);
+
+
+
+/* * DOCU: Processe user deposit by validating the input and updating the total balance.
+ * @param {None} - Takes input directly from the amountInput DOM element
+ * @throws {None} - Handles errors by displaying a error message
+ * * Last Updated: 2026-02-09  
+ * Author: Krishae Ann Dela Cruz  
+ * Last Updated By: Krishae Ann Dela Cruz  
+ */
+function deposit() {        
     const amount = amountInput.value.trim();
     if (amount === '' || Number(amount) <= 0) {
         message.innerText = 'Enter a valid amount.';
@@ -20,7 +32,15 @@ function deposit() {        // when deposit button is clicked and entered a vali
 
 }
 
-function withdraw() {   // when withdraw button is clicked and entered a valid amount    
+
+/* * DOCU: Process user withdrawal by checking if the input is valid and if there are enough funds
+ * @param {None} - Takes input directly from the amountInput DOM element
+ * @throws {None} - Displays error messages for invalid inputs or low balance
+ * * Last Updated: 2026-02-09  
+ * Author: Krishae Ann Dela Cruz  
+ * Last Updated By: Krishae Ann Dela Cruz  
+ */
+function withdraw() {   
     const amount = amountInput.value.trim();    
     if (amount === '' || Number(amount) <= 0) {
         message.innerText = 'Enter a valid amount.';
@@ -38,9 +58,7 @@ function withdraw() {   // when withdraw button is clicked and entered a valid a
     amountInput.value = '';
 }
 
-// added event listeners to buttons to call its functions
-depositButton.addEventListener('click', deposit);   
-withdrawButton.addEventListener('click', withdraw);
+
 
 
 

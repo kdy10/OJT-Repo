@@ -11,16 +11,23 @@
         }
         #container {
             width: 300px;
-            height: 200px;
+            height: 250px;
             background-color: lightgray;
             margin: 50px auto;
             padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            justify-content:center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
             border-radius: 10px;
             cursor: pointer;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
         .color-box {
             width: 100px;
@@ -38,6 +45,13 @@
         .pink { background-color: pink; }
         .violet { background-color: violet; }
         .brown { background-color: brown; }
+
+
+        #selected-color {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -57,19 +71,42 @@
         </div>
     </div>
 
+    <section id="selected-color"></section>
+
     <script>
+        /* * DOCU: Handles clicks on the main container to alert the user and change its background color.
+        * @param {Event} - The click event object
+        * @returns {void} - Updates the container's background color and triggers an alert
+        * * Last Updated: 2026-02-09  
+        * Author: Krishae Ann Dela Cruz  
+        * Last Updated By: Krishae Ann Dela Cruz  
+        */
         document.getElementById("container").addEventListener("click", function() {
             alert("You clicked the container!");
 
-            // "this" refers to the element that triggered the event (in this case,                 #container)
             this.style.backgroundColor = "lightgray"; 
         });
-
+        
+        /* * DOCU: Updates the page and container colors based on the clicked color box, while preventing the click from bubbling up to the parent container.
+        * @param {Event} event - The click event used to stop propagation and identify the target
+        * @returns {void} - Updates borders, body and container colors, and status text
+        * * Last Updated: 2026-02-09  
+        * Author: Krishae Ann Dela Cruz  
+        * Last Updated By: Krishae Ann Dela Cruz  
+        */
         document.querySelectorAll(".color-box").forEach(button => {
             button.addEventListener("click", function(event) {
-                event.stopPropagation(); // Uncomment this to see the difference
-                document.getElementById("container").style.backgroundColor = this.style.backgroundColor;
-                alert("You clicked the " + this.textContent + " button!");
+                event.stopPropagation();
+
+                document.querySelectorAll(".color-box").forEach(btn => btn.style.border = "none");
+                this.style.border = "3px solid black";
+                this.style.borderRadius = "5px";
+
+                document.querySelector("body").style.backgroundColor = window.getComputedStyle(this).backgroundColor;
+                document.getElementById("container").style.backgroundColor = window.getComputedStyle(this).backgroundColor;
+
+                document.getElementById("selected-color").textContent = "Selected Color: " + this.textContent;
+                
             });
         });
     </script>
