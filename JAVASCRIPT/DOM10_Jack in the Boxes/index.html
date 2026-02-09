@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack in the Box</title>
+        
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                background-color: #FFD1DC;
+            }
+            img {
+                width: 350px;
+                height: 380px;
+                margin: 10px;
+                cursor: pointer;
+               
+                transition: opacity 0.3s ease-in-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            button {
+                margin-top: 40px;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: white;
+                color: #c46a7f;
+                border: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease-in-out;
+            }
+            button:hover {
+                background-color: #eaadbb;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img id="mainBox" src="assets/close.png" data-open="assets/open.png" alt="Jack in the Box">
+
+        <button id="clickMe">Click Me</button>
+
+        <script>
+            const mainBox = document.getElementById("mainBox");
+            const clickMeButton = document.getElementById("clickMe");
+            mainBox.addEventListener("click", openCLose);
+            clickMeButton.addEventListener("click", openCLose);
+            const boingSound = new Audio("assets/boing.mp3");
+
+            /* * DOCU: Toggles a box between 'open' and 'closed' with a flash effect.
+            * @returns {void} - Updates the image source, scaling, and button text
+            * * Last Updated: 2026-02-09  
+            * Author: Krishae Ann Dela Cruz  
+            * Last Updated By: Krishae Ann Dela Cruz  
+            */
+            function openCLose() {
+                const closeSrc = "assets/close.png";
+                const openSrc = mainBox.getAttribute("data-open");
+                
+
+                if (mainBox.getAttribute("src") === closeSrc) {
+                    mainBox.src = "assets/flash.gif";
+                    mainBox.style.transform = "scale(1.2)";
+                    
+
+                    setTimeout(() => {    
+                        boingSound.currentTime = 0; 
+                        boingSound.play();
+                        mainBox.style.transition = "transform 0.5s ease";   
+                        mainBox.src = openSrc;
+                        mainBox.style.transform = "scale(1)";
+
+                    }, 400);
+
+                    clickMeButton.innerText = "Close";
+                }
+                else {
+                    mainBox.style.transition = "transform 0.8s ease";
+                    mainBox.src = closeSrc;
+                    clickMeButton.innerText = "Click Me";
+                }
+            }
+        </script>
+    </body>
+</html>
