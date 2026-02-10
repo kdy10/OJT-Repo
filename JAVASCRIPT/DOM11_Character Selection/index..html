@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Selection</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <img src="assets/Main_Logo.png" alt="Stardew Valley Logo" class="Stardew Valley logo">
+        <main>
+            
+            <section class="selection-section">
+                <h1>Select your Bachelor</h1>
+                <ul id="character-list">
+                    <li>
+                        <img src="assets/sebastian.png" alt="Sebastian of Stardew Valley" id="character1" class="character"
+                        data-name="Sebastian"
+                        data-title="The Emo/Gamer"
+                        data-quote="I'd rather stay in tonight... but maybe I could make an exception for you."
+                        data-gift="Frozen Tear or Sashimi">
+                    </li>
+                    <li>
+                        <img src="assets/shane.png" alt="Shane of Stardew Valley" id="character2" class="character"
+                        data-name="Shane"
+                        data-title="The Grumpy/Rough Diamond"
+                        data-quote="I am surprised you are even talking to me. Don’t you have better things to do?"
+                        data-gift="Beer or Hot Pepper">
+                    </li>
+                    <li>
+                        <img src="assets/alex.png" alt="Alex of Stardew Valley" id="character3" class="character"
+                        data-name="Alex"
+                        data-title="The Jock"
+                        data-quote="Check out these muscles! I've been working out for the pro season."
+                        data-gift="Complete Breakfast or Salmon Dinner">
+                    </li>
+                    <li>
+                        <img src="assets/harvey.png" alt="Harvey of Stardew Valley" id="character4" class="character"
+                        data-name="Harvey"
+                        data-title="The Sweet Doctor"
+                        data-quote="Don't forget to cover your mouth when you cough! Your health is my priority."
+                        data-gift="Coffee or Pickles">
+                    </li>
+                    <li>
+                        <img src="assets/sam.png" alt="Sam of Stardew Valley" id="character5" class="character"
+                        data-name="Sam"
+                        data-title="The Skater/Musician"
+                        data-quote="Hey! Want to see me land this kickflip? Or maybe hear my new song?"
+                        data-gift="Cactus Fruit or Pizza">
+                    </li>
+                    <li>
+                        <img src="assets/elliot.png" alt="Elliott of Stardew Valley" id="character6" class="character"
+                        data-name="Elliott"
+                        data-title="The Romantic/Writer"
+                        data-quote="The sea air is so inspiring today, is it not? It reminds me of a poem..."
+                        data-gift="Pomegranate or Duck Feather">
+                    </li>
+                </ul>
+                
+            </section>
+
+            <section class="details-section">
+                <img id="char-image" src="assets/profile-back.png" alt="Empty Character Profile">
+                
+                <div id="character-details">
+                    <h2 id="char-name">Name</h2>
+                    <p id="char-title">Title</p>
+                    <p ><img src="assets/quote.png" alt="Stardew Quote Icon" ><span id="char-quote">Dialogue</span></p>
+                    <p><img src="assets/gift.png" alt="Stardew Gift Icon"> <span id="char-gift">Favorite Gifts</span></p>
+                </div>
+
+            
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

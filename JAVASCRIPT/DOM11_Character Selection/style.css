@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Press Start 2P', cursive;
+    color: #4B2C20;
+}
+main{
+    padding: 30px 80px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 300px;
+    
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: #B14E05;
+}
+.selection-section, .details-section {
+    flex: 1;
+    margin-top: 20px;
+    
+}
+.selection-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#character-list {
+    list-style-type: none;
+    width: 500px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.character {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.character:hover {
+    transform: scale(1.1); 
+    border-color: #B14E05; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+}
+.character.active {
+    border: 6px solid #E0A100; 
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(59, 58, 54, 0.6);
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+.details-section {
+    width: 140px;
+    min-height: 400px;
+    text-align: center;
+    background-image: url("assets/container.png");
+    background-size: 100% 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+}
+.details-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #B14E05;
+}
+.details-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.details-section p img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+.details-section p {
+    padding: 0 10px;
+}
+#char-quote{
+    font-style: italic;
+    color: #555;
+    font-size: 12px;
+   
+}
+#char-gift{
+    font-size: 12px;
+}
