@@ -61,12 +61,7 @@ h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 10; 
 }
-.character.active {
-    border: 6px solid #E0A100; 
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(59, 58, 54, 0.6);
-    background-color: rgba(255, 255, 255, 0.3); 
-}
+
 .details-section {
     width: 140px;
     min-height: 400px;

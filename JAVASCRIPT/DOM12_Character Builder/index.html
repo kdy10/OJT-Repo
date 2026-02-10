@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Builder</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <h1>Build your Character!</h1>
+
+        <main>
+            <section class="character-display">
+                <div class="character">
+                    <img id="char-helmet" src="" alt="Character Helmet">
+                    <img id="char-chestplate" src="" alt="Character Chestplate">
+                    <img id="char-leggings" src="" alt="Character Leggings">
+                    <img id="char-boots" src="" alt="Character Boots">
+                </div>
+                
+            </section>
+
+            <section class="character-options">
+                <h2>Choose your Armor:</h2>
+                <div class="character-options">
+                    <h3 class="setHead">Select your Helmet</h3>
+                    <ul class="helmet-set">
+                        <li><img src="assets/armor/Arctic_Hood.png" alt="Arctic Hood" data-part="helmet"></li>
+                        <li><img src="assets/armor/Fiery_Helmet.png" alt="Fiery Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Iron_Helmet.png" alt="Iron Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Ironwood_Helmet.png" alt="Ironwood Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Knightmetal_Helmet.png" alt="Knightmetal Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Phantom_Helmet.png" alt="Phantom Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Steeleaf_Helmet.png" alt="Steeleaf Helmet" data-part="helmet"></li>
+                        <li><img src="assets/armor/Yeti_Horned_Helm.png" alt="Yeti Horned Helm" data-part="helmet"></li>
+                    </ul>
+                    <h3 class="setHead">Select your Chestplate</h3>
+                    <ul class="chestplate-set">
+                        <li><img src="assets/armor/Arctic_Jacket.png" alt="Arctic Jacket" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Fiery_Chestplate.png" alt="Fiery Chestplate" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Ironwood_Chestplate.png" alt="Ironwood Chestplate" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Knightmetal_Chestplate.png" alt="Knightmetal Chestplate" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Naga_Scale_Tunic.png" alt="Naga Scale Tunic" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Phantom_Chestplate.png" alt="Phantom Chestplate" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Steeleaf_Chestplate.png" alt="Steeleaf Chestplate" data-part="chestplate"></li>
+                        <li><img src="assets/armor/Yeti_Jacket.png" alt="Yeti Jacket" data-part="chestplate"></li>
+                    </ul>
+                    <h3 class="setHead">Select your Leggings</h3>
+                    <ul class="leggings-set">
+                        <li><img src="assets/armor/Arctic_Leggings.png" alt="Arctic Leggings" data-part="leggings"></li>
+                        <li><img src="assets/armor/Fiery_Leggings.png" alt="Fiery Leggings" data-part="leggings"></li>
+                        <li><img src="assets/armor/Ironwood_Leggings.png" alt="Ironwood Leggings" data-part="leggings"></li>
+                        <li><img src="assets/armor/Knightmetal_Greaves.png" alt="Knightmetal Greaves" data-part="leggings"></li>
+                        <li><img src="assets/armor/Naga_Scale_Leggings.png" alt="Naga Scale Leggings" data-part="leggings"></li>
+                        <li><img src="assets/armor/Steeleaf_Leggings.png" alt="Steeleaf Leggings" data-part="leggings"></li>
+                        <li><img src="assets/armor/Yeti_Leggings.png" alt="Yeti Leggings" data-part="leggings"></li>
+                    </ul>
+                    <h3 class="setHead">Select your Boots</h3>
+                    <ul class="boots-set">
+                        <li><img src="assets/armor/Arctic_Boots.png" alt="Arctic Boots" data-part="boots"></li>
+                        <li><img src="assets/armor/Fiery_Boots.png" alt="Fiery Boots" data-part="boots"></li>
+                        <li><img src="assets/armor/Ironwood_Boots.png" alt="Ironwood Boots" data-part="boots"></li>
+                        <li><img src="assets/armor/Knightmetal_Boots.png" alt="Knightmetal Boots" data-part="boots"></li>
+                        <li><img src="assets/armor/Steeleaf_Boots.png" alt="Steeleaf Boots" data-part="boots"></li>
+                        <li><img src="assets/armor/Yeti_Boots.png" alt="Yeti Boots" data-part="boots"></li>
+                    </ul>
+                </div>
+                <button id="lock-button">Lock In</button>
+                <p id="message"></p>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

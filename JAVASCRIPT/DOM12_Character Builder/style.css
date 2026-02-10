@@ -1,0 +1,180 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #4B2C20;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/back.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: -1; 
+    transform: scale(1.1);
+}
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main{
+    padding: 30px 80px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+
+}
+
+.character-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    height: 500px;
+    width: 500px;
+   
+}
+
+.character {
+    position: relative; 
+    width: 200px;    
+    height: 100%;    
+    margin: 0 auto;
+}
+
+.character img {
+    position: absolute; 
+    width: 180px;      
+    height: 180px;
+    object-fit: contain;
+}
+.active{
+    border-color: #B14E05;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(59, 58, 54, 0.6);
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+#char-helmet {
+    z-index: 4; 
+    top: 0;
+    }
+#char-chestplate { 
+    z-index: 3; 
+    top: 100px; 
+    }
+#char-leggings { 
+    z-index: 2; 
+    top: 200px; 
+    }
+#char-boots { 
+    z-index: 1; 
+    top: 320px; 
+    }
+
+.character-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3C0C3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-top: 3px solid #373737; 
+    border-left: 3px solid #373737;   
+    border-right: 3px solid #FFFFFF;  
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.character-options h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #373737;
+}
+.setHead{
+    font-size: 10px;
+    color: #373737;
+    
+}
+.character-options ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    border-radius: 5px;
+    margin: 0;
+}
+.character-options li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: #8B8B8B; 
+    border-top: 3px solid #FFFFFF;   
+    border-left: 3px solid #FFFFFF;  
+    border-right: 3px solid #555555;  
+    border-bottom: 3px solid #555555;
+}
+.character-options li:hover {
+    transform: scale(1.1); 
+    border-color: #5A3D28; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+}
+.character-options li.active {
+    border: 3px solid #E0A100; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 58, 54, 0.6);
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+.character-options li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#lock-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: white;
+    color: #555555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+#lock-button:hover {
+    transform: scale(1.05);
+    background-color: #888888;
+    color: white;
+}
+#message {
+    margin-top: 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    font-style: italic;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

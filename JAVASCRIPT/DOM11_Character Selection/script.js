@@ -22,11 +22,12 @@ addEventListener("mousedown", function () {
  * * Last Updated: 2026-02-10  
  * Author: Krishae Ann Dela Cruz  
  */
-character.forEach((char) => {
+character.forEach(function (char) {
     char.addEventListener("click", function () {
         selectAudio.play();
         
-        character.forEach(c => c.classList.remove("active"));
+        character.forEach(function (c) 
+            { c.classList.remove("active"); });
         char.classList.add("active");
 
         const name = char.getAttribute("data-name");
